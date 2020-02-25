@@ -1,0 +1,16 @@
+#Kata name: Sort the Gift Code
+
+#Kata link: https://www.codewars.com/kata/52aeb2f3ad0e952f560005d3/python
+
+#Kata description: Write a function called sortGiftCode/sort_gift_code/SortGiftCode
+#that accepts a string containing up to 26 unique alphabetical characters,
+#and returns a string containing the same characters in alphabetical order.
+
+
+
+def sort_gift_code(code):
+    return "".join(sorted(code))  #Sorted makes a new sorted list
+                                  #Therefore, you need to use join to make it back to a string
+
+
+
