@@ -1,0 +1,18 @@
+#Kata name: Divide and Conquer
+
+#Kata link: https://www.codewars.com/kata/57eaec5608fed543d6000021/python
+
+#Kata description: Given a mixed array of number and string representations of integers, 
+#add up the string integers and subtract this from the total of the non-string integers. Return as a number.
+
+
+
+def div_con(x):
+    strings = 0
+    ints = 0
+    for i in x:
+        try:            #Can't do mathmatical operation to string, so use a try statement to catch error.
+           ints += i      
+        except:         #Goes here when error, in other words, "i" is a string
+            strings += int(i)   
+    return ints - strings
