@@ -1,0 +1,16 @@
+
+
+
+
+
+
+
+def cakes(recipe, available):
+    if len(recipe) > len(available):        
+       return 0
+    total = []
+    for x in recipe:
+        temp = int(available[x] / recipe[x])        #How much you can make from 1 ingredient 
+        total.append(temp)
+    total = sorted(total)
+    return total[0]
