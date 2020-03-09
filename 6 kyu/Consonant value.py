@@ -8,8 +8,8 @@
 
 def solve(s): 
     Vowels = ["a","e","i","o","u"]
-    tempMax = 0       
-    greatest = 0
+    tempMax = 0        #TempMax is added to for every sequential non vowel
+    greatest = 0       #There may be a lot of sequential consonants, so only return the highestss
     for x in s:
         if x not in Vowels:
            tempMax += ord(x) - 96
