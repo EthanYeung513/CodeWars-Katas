@@ -8,7 +8,7 @@
 
 
 def cakes(recipe, available):
-    if len(recipe) > len(available):        
+    if len(recipe) > len(available):    #Cant make any    
        return 0
     total = []
     for x in recipe:
